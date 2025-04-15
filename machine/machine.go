@@ -5,7 +5,7 @@ package machine
 import (
 	"unsafe"
 
-	"github.com/clktmr/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/cpu"
 )
 
 type VideoType uint32

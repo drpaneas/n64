@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/clktmr/n64/debug"
-	"github.com/clktmr/n64/rcp/cpu"
+	"github.com/drpaneas/n64/debug"
+	"github.com/drpaneas/n64/rcp/cpu"
 )
 
 const (

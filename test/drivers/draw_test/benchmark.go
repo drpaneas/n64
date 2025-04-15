@@ -7,9 +7,9 @@ import (
 	"image/png"
 	"testing"
 
-	n64draw "github.com/clktmr/n64/drivers/draw"
-	"github.com/clktmr/n64/rcp/cpu"
-	"github.com/clktmr/n64/rcp/texture"
+	n64draw "github.com/drpaneas/n64/drivers/draw"
+	"github.com/drpaneas/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/texture"
 )
 
 func BenchmarkFillScreen(b *testing.B) {

@@ -5,8 +5,8 @@ import (
 	"image/png"
 	"strings"
 
-	"github.com/clktmr/n64/debug"
-	"github.com/clktmr/n64/rcp/texture"
+	"github.com/drpaneas/n64/debug"
+	"github.com/drpaneas/n64/rcp/texture"
 )
 
 type SubfontData struct {

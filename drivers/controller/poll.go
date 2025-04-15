@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"github.com/clktmr/n64/debug"
-	"github.com/clktmr/n64/rcp/serial"
-	"github.com/clktmr/n64/rcp/serial/joybus"
+	"github.com/drpaneas/n64/debug"
+	"github.com/drpaneas/n64/rcp/serial"
+	"github.com/drpaneas/n64/rcp/serial/joybus"
 )
 
 var (

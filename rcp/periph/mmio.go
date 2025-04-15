@@ -9,7 +9,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/clktmr/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/cpu"
 )
 
 // Use for MMIO on the PI external bus:

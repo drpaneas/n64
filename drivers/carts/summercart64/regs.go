@@ -3,8 +3,8 @@ package summercart64
 import (
 	"unsafe"
 
-	"github.com/clktmr/n64/rcp/cpu"
-	"github.com/clktmr/n64/rcp/periph"
+	"github.com/drpaneas/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/periph"
 )
 
 const baseAddr uintptr = cpu.KSEG1 | 0x1fff_0000

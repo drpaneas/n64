@@ -38,7 +38,7 @@ func prepareRead(t *testing.T, filename string, flipBytes []int) io.ReaderAt {
 }
 
 func TestRead(t *testing.T) {
-	filename := path.Join("testdata", "clktmr.mpk")
+	filename := path.Join("testdata", "drpaneas.mpk")
 	tests := map[string]struct {
 		data io.ReaderAt
 		err  error
@@ -76,7 +76,7 @@ func TestReadDir(t *testing.T) {
 		"FullMulti": {{0, nil}, {0, nil}},
 	}
 
-	data, err := os.ReadFile(path.Join("testdata", "clktmr.mpk"))
+	data, err := os.ReadFile(path.Join("testdata", "drpaneas.mpk"))
 	if err != nil {
 		t.Fatal("missing testdata:", err)
 	}
@@ -118,7 +118,7 @@ func TestReadFile(t *testing.T) {
 		"Vigilante82":  {"V82, \"METIN\"", "NVGP", "52", 256, "\x86\x99\x89\x88\x78\x19\x3d\x84\xb3\x2f\x8b\x49\x40\xb6\x22\x6b\x57\x28\x25\xdf", nil},
 	}
 
-	data, err := os.ReadFile(path.Join("testdata", "clktmr.mpk"))
+	data, err := os.ReadFile(path.Join("testdata", "drpaneas.mpk"))
 	if err != nil {
 		t.Fatal("missing testdata:", err)
 	}
@@ -170,12 +170,12 @@ func TestReadFile(t *testing.T) {
 }
 
 func writeableTestdata(t *testing.T, name string) *os.File {
-	data, err := os.ReadFile(path.Join("testdata", "clktmr.mpk"))
+	data, err := os.ReadFile(path.Join("testdata", "drpaneas.mpk"))
 	if err != nil {
 		t.Fatal("missing testdata:", err)
 	}
 
-	tempTestdata := path.Join(t.TempDir(), "clktmr.mpk")
+	tempTestdata := path.Join(t.TempDir(), "drpaneas.mpk")
 	err = os.WriteFile(tempTestdata, data, 0666)
 	if err != nil {
 		t.Fatal("copying testdata:", err)
@@ -210,7 +210,7 @@ func TestWriteFile(t *testing.T) {
 
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
-			pfs, err := Read(writeableTestdata(t, "clktmr.mpk"))
+			pfs, err := Read(writeableTestdata(t, "drpaneas.mpk"))
 			if err != nil {
 				t.Fatal("damaged testdata:", err)
 			}
@@ -295,7 +295,7 @@ func TestCreateFile(t *testing.T) {
 		"ErrEncoding":        {"smallcaps", ErrEncoding},
 	}
 
-	testdata := writeableTestdata(t, "clktmr.mpk")
+	testdata := writeableTestdata(t, "drpaneas.mpk")
 
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
@@ -350,7 +350,7 @@ func TestRenameFile(t *testing.T) {
 
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
-			testdata := writeableTestdata(t, "clktmr.mpk")
+			testdata := writeableTestdata(t, "drpaneas.mpk")
 			pfs, err := Read(testdata)
 			if err != nil {
 				t.Fatal("damaged testdata:", err)
@@ -397,7 +397,7 @@ func TestOpenFile(t *testing.T) {
 		"ErrInvalid3":  {"/PERFECT ", fs.ErrInvalid},
 	}
 
-	testdata := writeableTestdata(t, "clktmr.mpk")
+	testdata := writeableTestdata(t, "drpaneas.mpk")
 	pfs, err := Read(testdata)
 	if err != nil {
 		t.Fatal("damaged testdata:", err)
@@ -426,7 +426,7 @@ func TestRemoveFile(t *testing.T) {
 		"Ok3":          {"V82, \"METIN\"", 256, nil},
 	}
 
-	testdata := writeableTestdata(t, "clktmr.mpk")
+	testdata := writeableTestdata(t, "drpaneas.mpk")
 
 	var pfs *FS
 	var free int64
@@ -486,7 +486,7 @@ func TestTruncateFile(t *testing.T) {
 
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
-			testdata := writeableTestdata(t, "clktmr.mpk")
+			testdata := writeableTestdata(t, "drpaneas.mpk")
 			pfs, err := Read(testdata)
 			if err != nil {
 				t.Fatal("damaged testdata:", err)
@@ -569,7 +569,7 @@ func TestParallel(t *testing.T) {
 		"NEWFILE.1",
 		"NEWFILE.2",
 	}
-	testdata := writeableTestdata(t, "clktmr.mpk")
+	testdata := writeableTestdata(t, "drpaneas.mpk")
 	pfs, err := Read(testdata)
 	if err != nil {
 		t.Fatal("damaged testdata:", err)

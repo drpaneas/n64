@@ -3,7 +3,7 @@ package rsp
 import (
 	"runtime"
 
-	"github.com/clktmr/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/cpu"
 )
 
 var currentUCode *UCode

@@ -4,7 +4,7 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/clktmr/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/cpu"
 )
 
 func assertPadded[T cpu.Paddable](t *testing.T, slice []T, length int, align uintptr) {

@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/clktmr/n64/drivers/controller"
-	"github.com/clktmr/n64/drivers/controller/pakfs"
-	"github.com/clktmr/n64/rcp/serial/joybus"
+	"github.com/drpaneas/n64/drivers/controller"
+	"github.com/drpaneas/n64/drivers/controller/pakfs"
+	"github.com/drpaneas/n64/rcp/serial/joybus"
 )
 
 func TestControllerState(t *testing.T) {

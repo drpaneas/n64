@@ -4,7 +4,7 @@ import (
 	"embedded/mmio"
 	"unsafe"
 
-	"github.com/clktmr/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/cpu"
 )
 
 const ClockSpeed = 62.5e6

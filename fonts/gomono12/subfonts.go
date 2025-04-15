@@ -3,7 +3,7 @@ package gomono12
 import (
 	_ "embed"
 
-	"github.com/clktmr/n64/fonts"
+	"github.com/drpaneas/n64/fonts"
 	"github.com/embeddedgo/display/font/subfont"
 )
 

@@ -4,10 +4,10 @@ import (
 	"errors"
 	"io"
 
-	"github.com/clktmr/n64/debug"
-	"github.com/clktmr/n64/drivers/controller/pakfs"
-	"github.com/clktmr/n64/rcp/serial"
-	"github.com/clktmr/n64/rcp/serial/joybus"
+	"github.com/drpaneas/n64/debug"
+	"github.com/drpaneas/n64/drivers/controller/pakfs"
+	"github.com/drpaneas/n64/rcp/serial"
+	"github.com/drpaneas/n64/rcp/serial/joybus"
 )
 
 const pakSize = 1 << 16 // whole addressable space

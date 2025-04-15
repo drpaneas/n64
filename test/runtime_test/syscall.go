@@ -8,9 +8,9 @@ import (
 
 	_ "unsafe" // for linkname
 
-	"github.com/clktmr/n64/drivers/carts/summercart64"
-	"github.com/clktmr/n64/rcp"
-	"github.com/clktmr/n64/rcp/rdp"
+	"github.com/drpaneas/n64/drivers/carts/summercart64"
+	"github.com/drpaneas/n64/rcp"
+	"github.com/drpaneas/n64/rcp/rdp"
 )
 
 var blocker atomic.Bool

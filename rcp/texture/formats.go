@@ -8,7 +8,7 @@ import (
 	"image"
 	"image/draw"
 
-	"github.com/clktmr/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/cpu"
 )
 
 const (

@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/clktmr/n64/drivers/carts/isviewer"
-	"github.com/clktmr/n64/rcp/cpu"
-	"github.com/clktmr/n64/rcp/periph"
+	"github.com/drpaneas/n64/drivers/carts/isviewer"
+	"github.com/drpaneas/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/periph"
 )
 
 // Used as a reference implementation, should have the same behaviour as

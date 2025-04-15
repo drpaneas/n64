@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/clktmr/n64/rcp/serial/joybus"
+	"github.com/drpaneas/n64/rcp/serial/joybus"
 )
 
 type Port struct {

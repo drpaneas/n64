@@ -3,8 +3,8 @@ package isviewer
 import (
 	"unsafe"
 
-	"github.com/clktmr/n64/rcp/cpu"
-	"github.com/clktmr/n64/rcp/periph"
+	"github.com/drpaneas/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/periph"
 )
 
 var regs *registers = (*registers)(unsafe.Pointer(baseAddr))

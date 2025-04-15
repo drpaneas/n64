@@ -10,7 +10,7 @@ package cpu
 import (
 	"unsafe"
 
-	"github.com/clktmr/n64/debug"
+	"github.com/drpaneas/n64/debug"
 )
 
 const CacheLineSize = 16

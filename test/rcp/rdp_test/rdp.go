@@ -6,8 +6,8 @@ import (
 	"image/color"
 	"testing"
 
-	"github.com/clktmr/n64/rcp/rdp"
-	"github.com/clktmr/n64/rcp/texture"
+	"github.com/drpaneas/n64/rcp/rdp"
+	"github.com/drpaneas/n64/rcp/texture"
 )
 
 func TestFillRect(t *testing.T) {

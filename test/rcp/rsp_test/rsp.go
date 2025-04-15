@@ -6,8 +6,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/clktmr/n64/rcp/cpu"
-	"github.com/clktmr/n64/rcp/rsp"
+	"github.com/drpaneas/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/rsp"
 )
 
 func TestDMA(t *testing.T) {

@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/clktmr/n64/drivers/carts/summercart64"
-	"github.com/clktmr/n64/rcp/cpu"
+	"github.com/drpaneas/n64/drivers/carts/summercart64"
+	"github.com/drpaneas/n64/rcp/cpu"
 )
 
 func mustSC64(t *testing.T) (sc64 *summercart64.Cart) {

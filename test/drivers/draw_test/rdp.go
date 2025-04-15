@@ -9,9 +9,9 @@ import (
 	"image/png"
 	"testing"
 
-	n64draw "github.com/clktmr/n64/drivers/draw"
-	"github.com/clktmr/n64/rcp/texture"
-	"github.com/clktmr/n64/rcp/video"
+	n64draw "github.com/drpaneas/n64/drivers/draw"
+	"github.com/drpaneas/n64/rcp/texture"
+	"github.com/drpaneas/n64/rcp/video"
 )
 
 //go:embed testdata/gradient.png

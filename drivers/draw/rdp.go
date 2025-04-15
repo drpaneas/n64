@@ -6,10 +6,10 @@ import (
 	"image/draw"
 	"unicode/utf8"
 
-	"github.com/clktmr/n64/debug"
-	"github.com/clktmr/n64/fonts"
-	"github.com/clktmr/n64/rcp/rdp"
-	"github.com/clktmr/n64/rcp/texture"
+	"github.com/drpaneas/n64/debug"
+	"github.com/drpaneas/n64/fonts"
+	"github.com/drpaneas/n64/rcp/rdp"
+	"github.com/drpaneas/n64/rcp/texture"
 
 	"github.com/embeddedgo/display/images"
 )

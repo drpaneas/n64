@@ -1,4 +1,4 @@
-module github.com/clktmr/n64
+module github.com/drpaneas/n64
 
 go 1.22
 

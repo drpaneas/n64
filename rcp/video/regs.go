@@ -8,10 +8,10 @@ import (
 	"image"
 	"unsafe"
 
-	"github.com/clktmr/n64/debug"
-	"github.com/clktmr/n64/machine"
-	"github.com/clktmr/n64/rcp/cpu"
-	"github.com/clktmr/n64/rcp/texture"
+	"github.com/drpaneas/n64/debug"
+	"github.com/drpaneas/n64/machine"
+	"github.com/drpaneas/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/texture"
 )
 
 var regs *registers = (*registers)(unsafe.Pointer(baseAddr))

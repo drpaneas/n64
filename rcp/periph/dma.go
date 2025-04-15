@@ -4,8 +4,8 @@ import (
 	"embedded/rtos"
 	"sync/atomic"
 
-	"github.com/clktmr/n64/rcp"
-	"github.com/clktmr/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp"
+	"github.com/drpaneas/n64/rcp/cpu"
 )
 
 type dmaDirection bool

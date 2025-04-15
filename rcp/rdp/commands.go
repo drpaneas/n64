@@ -9,9 +9,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/clktmr/n64/debug"
-	"github.com/clktmr/n64/rcp/cpu"
-	"github.com/clktmr/n64/rcp/texture"
+	"github.com/drpaneas/n64/debug"
+	"github.com/drpaneas/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/texture"
 )
 
 type command uint64
@@ -525,7 +525,7 @@ func MaxTileSize(bpp texture.BitDepth) image.Rectangle {
 // Little unsafe helper to avoid heap allocation from calls to RGBA().
 //
 //go:noescape
-//go:linkname asRGBA github.com/clktmr/n64/rcp/rdp._asRGBA
+//go:linkname asRGBA github.com/drpaneas/n64/rcp/rdp._asRGBA
 func asRGBA(c color.Color) (ret color.RGBA)
 func _asRGBA(c color.Color) (ret color.RGBA) {
 	if c, ok := c.(color.RGBA); ok {

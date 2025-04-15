@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"os/signal"
 
-	"github.com/clktmr/n64/drivers/controller/pakfs"
+	"github.com/drpaneas/n64/drivers/controller/pakfs"
 	"rsc.io/rsc/fuse"
 )
 

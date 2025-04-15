@@ -4,10 +4,10 @@ import (
 	"image"
 	"time"
 
-	"github.com/clktmr/n64/rcp"
-	"github.com/clktmr/n64/rcp/rdp"
-	"github.com/clktmr/n64/rcp/texture"
-	"github.com/clktmr/n64/rcp/video"
+	"github.com/drpaneas/n64/rcp"
+	"github.com/drpaneas/n64/rcp/rdp"
+	"github.com/drpaneas/n64/rcp/texture"
+	"github.com/drpaneas/n64/rcp/video"
 )
 
 // Display implements a vsynced, double buffered framebuffer.

@@ -4,9 +4,9 @@ import (
 	"embedded/rtos"
 	"image"
 
-	"github.com/clktmr/n64/rcp"
-	"github.com/clktmr/n64/rcp/cpu"
-	"github.com/clktmr/n64/rcp/texture"
+	"github.com/drpaneas/n64/rcp"
+	"github.com/drpaneas/n64/rcp/cpu"
+	"github.com/drpaneas/n64/rcp/texture"
 )
 
 var VBlank rtos.Note
